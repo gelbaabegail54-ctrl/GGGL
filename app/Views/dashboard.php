@@ -68,7 +68,8 @@
             <!-- Quick Information Section -->
             <div class="mt-4 p-5 bg-white border rounded-3 shadow-sm">
                 <h2>Business Overview</h2>
-                <p>Welcome to your central management hub. From here you can monitor your rice stocks, record daily sales, and manage your employees. Use the sidebar on the left to navigate through the different sections of the system.</p>
+                <p>Ej Rice Retailing System is retail business that sells different types of rice per kilo or sack to local customers.
+                It uses a computerized system to manage inventory, track sales, and handle transactions efficiently.</p>
                 <hr>
                 <p class="text-muted small">System Date: <?= date('F d, Y') ?></p>
             </div>
