@@ -181,8 +181,11 @@ class AdminController extends Controller
     public function addToCart() {
         $inventoryModel = new RiceInventoryModel();
         $variety_id = $this->request->getPost('variety_id');
-        $qty_sold = $this->request->getPost('quantity_kg');
+        $qty = $this->request->getPost('quantity');
+        $unit = $this->request->getPost('unit');
         $customer_name = $this->request->getPost('customer_name') ?: 'Walk-in Customer';
+
+        $qty_sold = ($unit === 'sack') ? $qty * 50 : $qty;
 
         $rice = $inventoryModel->find($variety_id);
         
@@ -245,7 +248,9 @@ class AdminController extends Controller
             // Fallback for single sale if form submitted directly without cart (optional)
             $variety_id = $this->request->getVar('variety_id');
             if ($variety_id) {
-                $qty_sold = $this->request->getVar('quantity_kg');
+                $qty = $this->request->getVar('quantity');
+                $unit = $this->request->getVar('unit');
+                $qty_sold = ($unit === 'sack') ? $qty * 50 : $qty;
                 $customer_name = $this->request->getVar('customer_name') ?: 'Walk-in Customer';
                 
                 $rice = $inventoryModel->find($variety_id);

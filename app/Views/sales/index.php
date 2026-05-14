@@ -53,10 +53,14 @@
                     </div>
 
                     <div class="mb-4">
-                        <label class="form-label fw-semibold text-secondary">Quantity (kg)</label>
+                        <label class="form-label fw-semibold text-secondary">Quantity</label>
                         <div class="input-group">
                             <span class="input-group-text bg-light border-end-0"><i class="fas fa-weight-hanging text-muted"></i></span>
-                            <input type="number" name="quantity_kg" step="0.01" class="form-control border-start-0" placeholder="0.00" required>
+                            <input type="number" name="quantity" step="0.01" class="form-control border-start-0" placeholder="0.00" required>
+                            <select name="unit" class="form-select" style="max-width: 100px;">
+                                <option value="kg">kg</option>
+                                <option value="sack">Sack (50kg)</option>
+                            </select>
                         </div>
                     </div>
 
