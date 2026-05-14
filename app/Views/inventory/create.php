@@ -12,13 +12,7 @@
                     
                     <div class="mb-3">
                         <label class="form-label fw-bold text-secondary">Variety Name</label>
-                        <select name="variety" class="form-select form-select-lg" required>
-                            <option value="" disabled selected>Select Variety...</option>
-                            <option value="Sinandomeng">Sinandomeng</option>
-                            <option value="Jasmine">Jasmine</option>
-                            <option value="Brown Rice">Brown Rice</option>
-                            <option value="Regular Milled">Regular Milled</option>
-                        </select>
+                        <input type="text" name="variety" class="form-control form-control-lg" placeholder="Enter Variety Name (e.g. Sinandomeng)" required>
                     </div>
 
                     <div class="mb-3">
