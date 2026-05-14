@@ -24,4 +24,21 @@ class Sales extends Controller
         // This points to the new view file you will create
         return view('sales/history_view', $data);
     }
+
+    public function receipt($ref)
+    {
+        $model = new SalesTransactionModel();
+        $transactions = $model->getTransactionByReference($ref);
+
+        if (empty($transactions)) {
+            return redirect()->to('sales/history')->with('error', 'Transaction not found.');
+        }
+
+        $data = [
+            'transactions' => $transactions,
+            'title' => 'Official Receipt'
+        ];
+
+        return view('sales/receipt', $data);
+    }
 }

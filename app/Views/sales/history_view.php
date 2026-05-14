@@ -17,13 +17,14 @@
                         <th>Rice Variety</th>
                         <th>Quantity</th>
                         <th class="text-end">Total Amount</th>
-                        <th class="text-end pe-4">Status</th>
+                        <th class="text-end">Status</th>
+                        <th class="text-end pe-4">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if (empty($sales)): ?>
                         <tr>
-                            <td colspan="6" class="text-center py-4 text-muted">No sales transactions found.</td>
+                            <td colspan="7" class="text-center py-4 text-muted">No sales transactions found.</td>
                         </tr>
                     <?php else: ?>
                         <?php foreach ($sales as $sale): ?>
@@ -41,10 +42,15 @@
                             <td class="text-end fw-bold text-success">
                                 ₱<?= number_format($sale['total_price'], 2) ?>
                             </td>
-                            <td class="text-end pe-4">
+                            <td class="text-end">
                                 <span class="badge bg-success rounded-pill">
                                     <i class="fas fa-check-circle me-1"></i> Complete
                                 </span>
+                            </td>
+                            <td class="text-end pe-4">
+                                <a href="<?= base_url('sales/receipt/'.$sale['reference_no']) ?>" class="btn btn-sm btn-outline-primary" title="View Receipt">
+                                    <i class="fas fa-file-invoice"></i>
+                                </a>
                             </td>
                         </tr>
                         <?php endforeach; ?>

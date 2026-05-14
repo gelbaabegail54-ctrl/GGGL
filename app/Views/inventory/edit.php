@@ -32,8 +32,11 @@
                         <div class="col-md-6 mb-3">
                             <label class="form-label fw-bold text-secondary">Current Stock</label>
                             <div class="input-group input-group-lg">
-                                <input type="number" name="stock_kg" step="0.01" value="<?= $item['stock_kg'] ?>" class="form-control" required>
-                                <span class="input-group-text bg-light">kg</span>
+                                <input type="number" name="stock" step="0.01" value="<?= $item['stock_kg'] ?>" class="form-control" required>
+                                <select name="unit" class="form-select" style="max-width: 120px; flex: none;">
+                                    <option value="kg">kg</option>
+                                    <option value="sack">Sack (50kg)</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">

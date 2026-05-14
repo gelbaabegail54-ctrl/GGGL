@@ -16,7 +16,61 @@ class AdminController extends Controller
     }
 
     public function index() {
-        return view('dashboard');
+        $salesModel = new SalesTransactionModel();
+        
+        // Get Weekly Sales Data
+        $weeklySales = $salesModel->getWeeklySales();
+        
+        // Prepare labels and data for the last 7 days
+        $salesLabels = [];
+        $salesData = [];
+        for ($i = 6; $i >= 0; $i--) {
+            $date = date('Y-m-d', strtotime("-$i days"));
+            $dayName = date('D', strtotime($date));
+            $salesLabels[] = $dayName;
+            
+            $found = false;
+            foreach ($weeklySales as $sale) {
+                if ($sale['date'] == $date) {
+                    $salesData[] = (float)$sale['total'];
+                    $found = true;
+                    break;
+                }
+            }
+            if (!$found) {
+                $salesData[] = 0;
+            }
+        }
+
+        // Get Sales by Variety Data
+        $varietySales = $salesModel->getSalesByVariety();
+        $varietyLabels = [];
+        $varietyData = [];
+        $totalRevenue = 0;
+        foreach ($varietySales as $v) {
+            $varietyLabels[] = $v['variety'];
+            $varietyData[] = (float)$v['total'];
+            $totalRevenue += (float)$v['total'];
+        }
+
+        $inventoryModel = new RiceInventoryModel();
+        $totalStockResult = $inventoryModel->selectSum('stock_kg')->first();
+        $totalStock = $totalStockResult['stock_kg'] ?? 0;
+
+        $userModel = new UserModel();
+        $totalUsers = $userModel->countAll();
+
+        $data = [
+            'salesLabels'   => json_encode($salesLabels),
+            'salesData'     => json_encode($salesData),
+            'varietyLabels' => json_encode($varietyLabels),
+            'varietyData'   => json_encode($varietyData),
+            'totalRevenue'  => $totalRevenue,
+            'totalStock'    => $totalStock,
+            'totalUsers'    => $totalUsers
+        ];
+
+        return view('dashboard', $data);
     }
 
     // ==========================================
@@ -97,7 +151,11 @@ class AdminController extends Controller
     // Store New Rice Variety
     public function inventoryStore() {
         $model = new RiceInventoryModel();
-        $stock = $this->request->getVar('stock_kg');
+        $stock_input = $this->request->getVar('stock');
+        $unit = $this->request->getVar('unit');
+        
+        // Convert to kg if unit is sack
+        $stock = ($unit === 'sack') ? $stock_input * 50 : $stock_input;
         
         // Automatic Status Determination
         $status = 'In Stock';
@@ -129,7 +187,11 @@ class AdminController extends Controller
     // Update Inventory Item
     public function inventoryUpdate($id) {
         $model = new RiceInventoryModel();
-        $stock = $this->request->getVar('stock_kg');
+        $stock_input = $this->request->getVar('stock');
+        $unit = $this->request->getVar('unit');
+
+        // Convert to kg if unit is sack
+        $stock = ($unit === 'sack') ? $stock_input * 50 : $stock_input;
 
         // Automatic Status Determination
         $status = 'In Stock';
@@ -258,8 +320,10 @@ class AdminController extends Controller
                     return redirect()->back()->with('error', 'Not enough stock.');
                 }
 
+                $reference_no = 'TRX-' . strtoupper(bin2hex(random_bytes(4)));
                 $total_price = $rice['price'] * $qty_sold;
                 $salesModel->save([
+                    'reference_no'  => $reference_no,
                     'variety_id'    => $variety_id,
                     'quantity_kg'   => $qty_sold,
                     'total_price'   => $total_price,
@@ -271,7 +335,7 @@ class AdminController extends Controller
                 $status = ($new_stock <= 0) ? 'Out of Stock' : (($new_stock <= 10) ? 'Low Stock' : 'In Stock');
                 $inventoryModel->update($variety_id, ['stock_kg' => $new_stock, 'status' => $status]);
 
-                return redirect()->to('/sales')->with('status', 'Sale Recorded!');
+                return redirect()->to('/sales/receipt/'.$reference_no)->with('status', 'Sale Recorded!');
             }
             return redirect()->back()->with('error', 'Your cart is empty.');
         }
@@ -279,6 +343,8 @@ class AdminController extends Controller
         // Process each item in cart
         $db = \Config\Database::connect();
         $db->transStart();
+
+        $reference_no = 'TRX-' . strtoupper(bin2hex(random_bytes(4)));
 
         foreach ($cart as $item) {
             $rice = $inventoryModel->find($item['variety_id']);
@@ -290,6 +356,7 @@ class AdminController extends Controller
             }
 
             $salesModel->save([
+                'reference_no'  => $reference_no,
                 'variety_id'    => $item['variety_id'],
                 'quantity_kg'   => $item['quantity_kg'],
                 'total_price'   => $item['total_price'],
@@ -309,6 +376,6 @@ class AdminController extends Controller
         }
 
         session()->remove('cart');
-        return redirect()->to('/sales')->with('status', 'Multiple Sales Recorded Successfully!');
+        return redirect()->to('/sales/receipt/'.$reference_no)->with('status', 'Sales Recorded Successfully!');
     }
 }

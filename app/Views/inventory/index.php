@@ -21,7 +21,7 @@
             <table class="table table-hover align-middle mb-0">
                 <thead class="table-dark">
                     <tr>
-                        <th class="ps-4">ADD rice</th>
+                        <th class="ps-4">Variety Name</th>
                         <th>Grade</th>
                         <th>Stock (kg)</th>
                         <th>Price per kg</th>

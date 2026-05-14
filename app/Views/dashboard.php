@@ -15,42 +15,57 @@
 
 <div class="row">
     <div class="col-md-4 mb-4">
-        <div class="card card-stat bg-success-trans text-white shadow-sm h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
+        <div class="card card-stat bg-success-gradient text-white shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
                 <div>
-                    <h6 class="text-uppercase fw-bold opacity-75">Total Inventory</h6>
-                    <h3 class="card-title">🌾 Stock Levels</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="text-uppercase fw-bold opacity-75 mb-0">Total Inventory</h6>
+                        <i class="fas fa-warehouse fs-4 opacity-50"></i>
+                    </div>
+                    <h3 class="card-title fw-bold mb-0"><?= number_format($totalStock, 2) ?> <small class="fs-6 fw-normal opacity-75">kg</small></h3>
                 </div>
-                <div class="mt-3">
-                    <a href="<?= base_url('inventory') ?>" class="btn btn-light btn-sm w-100">View Details</a>
+                <div class="mt-4">
+                    <a href="<?= base_url('inventory') ?>" class="btn btn-white btn-sm w-100 bg-white text-success fw-bold py-2 shadow-sm border-0">
+                        View Details <i class="fas fa-chevron-right ms-1 small"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="col-md-4 mb-4">
-        <div class="card card-stat bg-primary-trans text-white shadow-sm h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
+        <div class="card card-stat bg-primary-gradient text-white shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
                 <div>
-                    <h6 class="text-uppercase fw-bold opacity-75">Revenue</h6>
-                    <h3 class="card-title">💰 Sales History</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="text-uppercase fw-bold opacity-75 mb-0">Total Revenue</h6>
+                        <i class="fas fa-coins fs-4 opacity-50"></i>
+                    </div>
+                    <h3 class="card-title fw-bold mb-0">₱<?= number_format($totalRevenue, 2) ?></h3>
                 </div>
-                <div class="mt-3">
-                    <a href="<?= base_url('sales/history') ?>" class="btn btn-light btn-sm w-100">View History</a>
+                <div class="mt-4">
+                    <a href="<?= base_url('sales/history') ?>" class="btn btn-white btn-sm w-100 bg-white text-primary fw-bold py-2 shadow-sm border-0">
+                        View History <i class="fas fa-chevron-right ms-1 small"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="col-md-4 mb-4">
-        <div class="card card-stat bg-dark-trans text-white shadow-sm h-100">
-            <div class="card-body d-flex flex-column justify-content-between">
+        <div class="card card-stat bg-dark-gradient text-white shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-between p-4">
                 <div>
-                    <h6 class="text-uppercase fw-bold opacity-75">Team</h6>
-                    <h3 class="card-title">👥 Staff Management</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h6 class="text-uppercase fw-bold opacity-75 mb-0">Staff Team</h6>
+                        <i class="fas fa-users fs-4 opacity-50"></i>
+                    </div>
+                    <h3 class="card-title fw-bold mb-0"><?= $totalUsers ?> <small class="fs-6 fw-normal opacity-75">Members</small></h3>
                 </div>
-                <div class="mt-3">
-                    <a href="<?= base_url('users') ?>" class="btn btn-light btn-sm w-100">Manage Access</a>
+                <div class="mt-4">
+                    <a href="<?= base_url('users') ?>" class="btn btn-white btn-sm w-100 bg-white text-dark fw-bold py-2 shadow-sm border-0">
+                        Manage Team <i class="fas fa-chevron-right ms-1 small"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -59,23 +74,36 @@
 
 <div class="row mt-2">
     <div class="col-lg-8 mb-4">
-        <div class="card analytics-card h-100">
-            <div class="card-header bg-transparent border-0 pt-3">
-                <h5 class="fw-bold">Weekly Sales Trend</h5>
+        <div class="card analytics-card h-100 border-0 shadow-sm">
+            <div class="card-header bg-transparent border-0 pt-4 px-4 d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="fw-bold mb-1">Weekly Sales Trend</h5>
+                    <p class="text-muted small mb-0">Revenue performance over the last 7 days</p>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Last 7 Days
+                    </button>
+                </div>
             </div>
-            <div class="card-body">
-                <canvas id="salesChart" height="250"></canvas>
+            <div class="card-body px-4 pb-4">
+                <div style="height: 300px;">
+                    <canvas id="salesChart"></canvas>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="col-lg-4 mb-4">
-        <div class="card analytics-card h-100">
-            <div class="card-header bg-transparent border-0 pt-3">
-                <h5 class="fw-bold">Rice Varieties</h5>
+        <div class="card analytics-card h-100 border-0 shadow-sm">
+            <div class="card-header bg-transparent border-0 pt-4 px-4">
+                <h5 class="fw-bold mb-1">Sales by Variety</h5>
+                <p class="text-muted small mb-0">Revenue distribution per product</p>
             </div>
-            <div class="card-body">
-                <canvas id="inventoryChart"></canvas>
+            <div class="card-body px-4 pb-4 d-flex flex-column justify-content-center">
+                <div style="height: 250px;">
+                    <canvas id="inventoryChart"></canvas>
+                </div>
             </div>
         </div>
     </div>
@@ -89,10 +117,10 @@
     new Chart(ctxSales, {
         type: 'line',
         data: {
-            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            labels: <?= $salesLabels ?>,
             datasets: [{
                 label: 'Sales (PHP)',
-                data: [12000, 19000, 15000, 25000, 22000, 30000, 28000],
+                data: <?= $salesData ?>,
                 borderColor: '#0d6efd',
                 backgroundColor: 'rgba(13, 110, 253, 0.1)',
                 fill: true,
@@ -111,14 +139,16 @@
     new Chart(ctxInv, {
         type: 'doughnut',
         data: {
-            labels: ['Sinandomeng', 'Brown Rice', 'Jasmine', 'Regular Milled'],
+            labels: <?= $varietyLabels ?>,
             datasets: [{
-                data: [40, 25, 20, 15],
+                data: <?= $varietyData ?>,
                 backgroundColor: [
                     'rgba(25, 135, 84, 0.7)', 
                     'rgba(255, 193, 7, 0.7)', 
                     'rgba(13, 202, 240, 0.7)', 
-                    'rgba(108, 117, 125, 0.7)'
+                    'rgba(108, 117, 125, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)'
                 ]
             }]
         },

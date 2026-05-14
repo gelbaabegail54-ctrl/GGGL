@@ -28,8 +28,11 @@
                         <div class="col-md-6 mb-3">
                             <label class="form-label fw-bold text-secondary">Stock Quantity</label>
                             <div class="input-group input-group-lg">
-                                <input type="number" name="stock_kg" step="0.01" class="form-control" placeholder="0.00" required>
-                                <span class="input-group-text bg-light">kg</span>
+                                <input type="number" name="stock" step="0.01" class="form-control" placeholder="0.00" required>
+                                <select name="unit" class="form-select" style="max-width: 120px; flex: none;">
+                                    <option value="kg">kg</option>
+                                    <option value="sack">Sack (50kg)</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
