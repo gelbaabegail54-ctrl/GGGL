@@ -41,3 +41,6 @@ $routes->get('inventory/delete/(:num)', 'AdminController::inventoryDelete/$1');
 $routes->get('sales', 'AdminController::salesIndex');
 $routes->get('sales/new', 'AdminController::salesIndex'); 
 $routes->post('sales/store', 'AdminController::salesStore');
+
+// Add this line so that localhost:8080/sales/history works
+$routes->get('sales/history', 'Sales::history');

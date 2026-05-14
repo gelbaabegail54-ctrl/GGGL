@@ -15,7 +15,7 @@
         <ul class="nav flex-column px-2">
             <!-- Dashboard -->
             <li class="nav-item mb-1">
-                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center" href="<?= base_url('dashboard') ?>">
+                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center <?= (url_is('dashboard*') ? 'bg-primary' : '') ?>" href="<?= base_url('dashboard') ?>">
                     <i class="fas fa-chart-line me-3" style="width: 20px;"></i> 
                     <span>Dashboard</span>
                 </a>
@@ -23,7 +23,7 @@
 
             <!-- Rice Inventory (The New Update) -->
             <li class="nav-item mb-1">
-                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center" href="<?= base_url('inventory') ?>">
+                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center <?= (url_is('inventory*') ? 'bg-primary' : '') ?>" href="<?= base_url('inventory') ?>">
                     <i class="fas fa-warehouse me-3" style="width: 20px;"></i> 
                     <span>Rice Inventory</span>
                 </a>
@@ -31,9 +31,17 @@
 
             <!-- User Management -->
             <li class="nav-item mb-1">
-                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center" href="<?= base_url('users') ?>">
+                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center <?= (url_is('users*') ? 'bg-primary' : '') ?>" href="<?= base_url('users') ?>">
                     <i class="fas fa-users-cog me-3" style="width: 20px;"></i> 
                     <span>Manage Users</span>
+                </a>
+            </li>
+
+            <!-- Sales History -->
+            <li class="nav-item mb-1">
+                <a class="nav-link text-white rounded p-3 btn-outline-primary text-start d-flex align-items-center <?= (url_is('sales/history*') ? 'bg-primary' : '') ?>" href="<?= base_url('sales/history') ?>">
+                    <i class="fas fa-history me-3" style="width: 20px;"></i> 
+                    <span>Sales History</span>
                 </a>
             </li>
 
