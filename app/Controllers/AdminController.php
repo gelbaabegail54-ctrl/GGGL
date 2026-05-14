@@ -171,50 +171,136 @@ class AdminController extends Controller
         $data['inventory'] = $inventoryModel->where('stock_kg >', 0)->findAll();
         // Get sales history with joined variety names
         $data['sales'] = $salesModel->getSalesHistory();
+        $data['selected_variety_id'] = $this->request->getGet('variety_id');
+        $data['cart'] = session()->get('cart') ?? [];
 
         return view('sales/index', $data);
     }
 
-    // Process and Save a Sale
+    // Add item to cart
+    public function addToCart() {
+        $inventoryModel = new RiceInventoryModel();
+        $variety_id = $this->request->getPost('variety_id');
+        $qty_sold = $this->request->getPost('quantity_kg');
+        $customer_name = $this->request->getPost('customer_name') ?: 'Walk-in Customer';
+
+        $rice = $inventoryModel->find($variety_id);
+        
+        if (!$rice) {
+            return redirect()->back()->with('error', 'Variety not found.');
+        }
+
+        if ($rice['stock_kg'] < $qty_sold) {
+            return redirect()->back()->with('error', 'Not enough stock for ' . $rice['variety']);
+        }
+
+        $cart = session()->get('cart') ?? [];
+        
+        // Check if already in cart, if so, update quantity
+        $found = false;
+        foreach ($cart as &$item) {
+            if ($item['variety_id'] == $variety_id) {
+                $item['quantity_kg'] += $qty_sold;
+                $item['total_price'] = $item['quantity_kg'] * $rice['price'];
+                $found = true;
+                break;
+            }
+        }
+
+        if (!$found) {
+            $cart[] = [
+                'variety_id'    => $variety_id,
+                'variety'       => $rice['variety'],
+                'grade'         => $rice['grade'],
+                'quantity_kg'   => $qty_sold,
+                'price'         => $rice['price'],
+                'total_price'   => $rice['price'] * $qty_sold,
+                'customer_name' => $customer_name
+            ];
+        }
+
+        session()->set('cart', $cart);
+        return redirect()->to('/sales')->with('status', 'Added to cart!');
+    }
+
+    // Remove item from cart
+    public function removeFromCart($index) {
+        $cart = session()->get('cart') ?? [];
+        if (isset($cart[$index])) {
+            unset($cart[$index]);
+            session()->set('cart', array_values($cart));
+        }
+        return redirect()->to('/sales');
+    }
+
+    // Process and Save a Sale (Now handles Cart)
     public function salesStore() {
         $salesModel = new SalesTransactionModel();
         $inventoryModel = new RiceInventoryModel();
 
-        $variety_id = $this->request->getVar('variety_id');
-        $qty_sold = $this->request->getVar('quantity_kg');
+        $cart = session()->get('cart') ?? [];
 
-        // 1. Fetch current rice data
-        $rice = $inventoryModel->find($variety_id);
-        
-        // 2. Security Check: Is there enough stock?
-        if ($rice['stock_kg'] < $qty_sold) {
-            return redirect()->back()->with('error', 'Error: Not enough stock available for ' . $rice['variety']);
+        if (empty($cart)) {
+            // Fallback for single sale if form submitted directly without cart (optional)
+            $variety_id = $this->request->getVar('variety_id');
+            if ($variety_id) {
+                $qty_sold = $this->request->getVar('quantity_kg');
+                $customer_name = $this->request->getVar('customer_name') ?: 'Walk-in Customer';
+                
+                $rice = $inventoryModel->find($variety_id);
+                if ($rice['stock_kg'] < $qty_sold) {
+                    return redirect()->back()->with('error', 'Not enough stock.');
+                }
+
+                $total_price = $rice['price'] * $qty_sold;
+                $salesModel->save([
+                    'variety_id'    => $variety_id,
+                    'quantity_kg'   => $qty_sold,
+                    'total_price'   => $total_price,
+                    'customer_name' => $customer_name
+                ]);
+
+                $new_stock = $rice['stock_kg'] - $qty_sold;
+                $status = ($new_stock <= 0) ? 'Out of Stock' : (($new_stock <= 10) ? 'Low Stock' : 'In Stock');
+                $inventoryModel->update($variety_id, ['stock_kg' => $new_stock, 'status' => $status]);
+
+                return redirect()->to('/sales')->with('status', 'Sale Recorded!');
+            }
+            return redirect()->back()->with('error', 'Your cart is empty.');
         }
 
-        // 3. Calculate Total
-        $total_price = $rice['price'] * $qty_sold;
+        // Process each item in cart
+        $db = \Config\Database::connect();
+        $db->transStart();
 
-        // 4. Record Transaction
-        $salesModel->save([
-            'variety_id'    => $variety_id,
-            'quantity_kg'   => $qty_sold,
-            'total_price'   => $total_price,
-            'customer_name' => $this->request->getVar('customer_name') ?: 'Walk-in Customer'
-        ]);
+        foreach ($cart as $item) {
+            $rice = $inventoryModel->find($item['variety_id']);
+            
+            // Final stock check before saving
+            if ($rice['stock_kg'] < $item['quantity_kg']) {
+                $db->transRollback();
+                return redirect()->back()->with('error', 'Error: Not enough stock for ' . $item['variety']);
+            }
 
-        // 5. Update Inventory Stock Level
-        $new_stock = $rice['stock_kg'] - $qty_sold;
-        
-        // 6. Recalculate Status
-        $status = 'In Stock';
-        if ($new_stock <= 0) $status = 'Out of Stock';
-        elseif ($new_stock <= 10) $status = 'Low Stock';
+            $salesModel->save([
+                'variety_id'    => $item['variety_id'],
+                'quantity_kg'   => $item['quantity_kg'],
+                'total_price'   => $item['total_price'],
+                'customer_name' => $item['customer_name']
+            ]);
 
-        $inventoryModel->update($variety_id, [
-            'stock_kg' => $new_stock,
-            'status'   => $status
-        ]);
+            $new_stock = $rice['stock_kg'] - $item['quantity_kg'];
+            $status = ($new_stock <= 0) ? 'Out of Stock' : (($new_stock <= 10) ? 'Low Stock' : 'In Stock');
+            $inventoryModel->update($item['variety_id'], ['stock_kg' => $new_stock, 'status' => $status]);
+        }
 
-        return redirect()->to('/sales')->with('status', 'Sale Recorded! Total: ₱' . number_format($total_price, 2));
+        $db->transComplete();
+
+        if ($db->transStatus() === FALSE) {
+            return redirect()->back()->with('error', 'Transaction failed.');
+        }
+
+        session()->remove('cart');
+        return redirect()->to('/sales')->with('status', 'Multiple Sales Recorded Successfully!');
     }
 }

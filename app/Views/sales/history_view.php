@@ -16,13 +16,14 @@
                         <th>Customer Name</th>
                         <th>Rice Variety</th>
                         <th>Quantity</th>
-                        <th class="text-end pe-4">Total Amount</th>
+                        <th class="text-end">Total Amount</th>
+                        <th class="text-center pe-4">Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php if (empty($sales)): ?>
                         <tr>
-                            <td colspan="5" class="text-center py-4 text-muted">No sales transactions found.</td>
+                            <td colspan="6" class="text-center py-4 text-muted">No sales transactions found.</td>
                         </tr>
                     <?php else: ?>
                         <?php foreach ($sales as $sale): ?>
@@ -37,8 +38,13 @@
                                 </span>
                             </td>
                             <td><?= number_format($sale['quantity_kg'], 2) ?> kg</td>
-                            <td class="text-end pe-4 fw-bold text-success">
+                            <td class="text-end fw-bold text-success">
                                 ₱<?= number_format($sale['total_price'], 2) ?>
+                            </td>
+                            <td class="text-end pe-4">
+                                <span class="badge bg-success rounded-pill">
+                                    <i class="fas fa-check-circle me-1"></i> Complete
+                                </span>
                             </td>
                         </tr>
                         <?php endforeach; ?>
