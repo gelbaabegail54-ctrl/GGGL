@@ -196,12 +196,13 @@ class AdminController extends Controller
 
         $cart = session()->get('cart') ?? [];
         
-        // Check if already in cart, if so, update quantity
+        // Check if already in cart, if so, update quantity and update name if provided
         $found = false;
         foreach ($cart as &$item) {
             if ($item['variety_id'] == $variety_id) {
                 $item['quantity_kg'] += $qty_sold;
                 $item['total_price'] = $item['quantity_kg'] * $rice['price'];
+                $item['customer_name'] = $customer_name; // Update to latest name
                 $found = true;
                 break;
             }
@@ -257,7 +258,8 @@ class AdminController extends Controller
                     'variety_id'    => $variety_id,
                     'quantity_kg'   => $qty_sold,
                     'total_price'   => $total_price,
-                    'customer_name' => $customer_name
+                    'customer_name' => $customer_name,
+                    'transaction_date' => date('Y-m-d H:i:s')
                 ]);
 
                 $new_stock = $rice['stock_kg'] - $qty_sold;
@@ -286,7 +288,8 @@ class AdminController extends Controller
                 'variety_id'    => $item['variety_id'],
                 'quantity_kg'   => $item['quantity_kg'],
                 'total_price'   => $item['total_price'],
-                'customer_name' => $item['customer_name']
+                'customer_name' => $item['customer_name'],
+                'transaction_date' => date('Y-m-d H:i:s')
             ]);
 
             $new_stock = $rice['stock_kg'] - $item['quantity_kg'];

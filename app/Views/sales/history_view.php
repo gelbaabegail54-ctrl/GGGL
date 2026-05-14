@@ -17,7 +17,7 @@
                         <th>Rice Variety</th>
                         <th>Quantity</th>
                         <th class="text-end">Total Amount</th>
-                        <th class="text-center pe-4">Status</th>
+                        <th class="text-end pe-4">Status</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -5,7 +5,12 @@ use CodeIgniter\Controller;
 
 class Sales extends Controller
 {
-    // ... other existing methods like index() or addToCart() ...
+    public function __construct() {
+        if(!session()->get('isLoggedIn')){
+            header('Location: '.base_url('login'));
+            exit;
+        }
+    }
 
     public function history()
     {
