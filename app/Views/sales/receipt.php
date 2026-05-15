@@ -60,7 +60,7 @@
 
     <div class="text-center header">
         <div class="brand">EJ RICE RETAILING</div>
-        <div class="info">Brgy. Example, City Name</div>
+        <div class="info">Brgy 1, Kabankalan City</div>
         <div class="info">Contact: 0912-345-6789</div>
     </div>
 

@@ -35,7 +35,7 @@
                             <td><code class="text-primary fw-bold"><?= esc($sale['reference_no']) ?></code></td>
                             <td class="fw-bold"><?= esc($sale['customer_name']) ?></td>
                             <td>
-                                <span class="badge bg-info text-dark text-wrap text-start" style="max-width: 250px;">
+                                <span class="badge bg-themed-pill text-neon-primary text-wrap text-start border border-white border-opacity-10" style="max-width: 250px;">
                                     <?= esc($sale['items_summary']) ?>
                                 </span>
                             </td>

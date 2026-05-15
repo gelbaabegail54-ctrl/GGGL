@@ -1,8 +1,8 @@
 <?= $this->extend('theme/layout') ?>
 
 <?= $this->section('content') ?>
-<div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom">
-    <h1 class="h2 fw-bold text-dark"><i class="fas fa-warehouse text-primary me-2"></i> Rice Inventory Management</h1>
+<div class="d-flex justify-content-between align-items-center pb-3 mb-4 border-bottom border-white border-opacity-10">
+    <h1 class="h2 fw-bold"><i class="fas fa-warehouse text-primary me-2"></i> Rice Inventory Management</h1>
     <a href="<?= base_url('inventory/create') ?>" class="btn btn-primary shadow-sm">
         <i class="fas fa-plus-circle"></i> Add New Variety
     </a>
@@ -33,7 +33,7 @@
                     <?php foreach($inventory as $item): ?>
                     <tr>
                         <td class="ps-4 fw-bold"><?= esc($item['variety']) ?></td>
-                        <td><span class="badge bg-light text-dark border"><?= esc($item['grade']) ?></span></td>
+                        <td><span class="badge bg-themed-pill text-neon-primary border border-white border-opacity-10"><?= esc($item['grade']) ?></span></td>
                         <td><?= number_format($item['stock_kg'], 2) ?> kg</td>
                         <td class="fw-bold text-success">₱<?= number_format($item['price'], 2) ?></td>
                         <td>

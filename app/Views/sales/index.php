@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
     <div class="col-md-6 col-lg-5">
         <div class="text-center mb-4">
-            <h1 class="h2 fw-bold text-dark">
+            <h1 class="h2 fw-bold">
                 <i class="fas fa-cash-register text-primary me-2"></i> Sales Transaction
             </h1>
             <p class="text-muted">Record a new customer purchase</p>

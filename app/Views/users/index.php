@@ -1,8 +1,8 @@
 <?= $this->extend('theme/layout') ?>
 
 <?= $this->section('content') ?>
-<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2 fw-bold text-dark">User Management</h1>
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom border-white border-opacity-10">
+    <h1 class="h2 fw-bold">User Management</h1>
     <a href="<?= base_url('users/create') ?>" class="btn btn-primary shadow-sm">Add New User</a>
 </div>
 
