@@ -118,7 +118,18 @@
                     </table>
                 </div>
                 <div class="p-3">
-                    <form action="<?= base_url('sales/store') ?>" method="post">
+                    <form action="<?= base_url('sales/store') ?>" method="post" id="transactionForm">
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold text-secondary">Cash Received</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light border-end-0">₱</span>
+                                <input type="number" name="cash_received" id="cash_received" step="0.01" class="form-control border-start-0 fs-5 fw-bold" placeholder="0.00" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between align-items-center">
+                            <span class="text-muted fw-semibold">Change:</span>
+                            <span id="change_display" class="fs-5 fw-bold text-primary">₱0.00</span>
+                        </div>
                         <button type="submit" class="btn btn-success w-100 py-3 fw-bold shadow-sm">
                             <i class="fas fa-check-circle me-2"></i> Complete Transaction
                         </button>
@@ -126,6 +137,38 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const cashInput = document.getElementById('cash_received');
+                const changeDisplay = document.getElementById('change_display');
+                const grandTotal = <?= $grand_total ?>;
+                const form = document.getElementById('transactionForm');
+
+                cashInput.addEventListener('input', function() {
+                    const cash = parseFloat(this.value) || 0;
+                    const change = cash - grandTotal;
+                    
+                    if (change >= 0) {
+                        changeDisplay.textContent = '₱' + change.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                        changeDisplay.classList.remove('text-danger');
+                        changeDisplay.classList.add('text-primary');
+                    } else {
+                        changeDisplay.textContent = 'Insufficient Cash';
+                        changeDisplay.classList.remove('text-primary');
+                        changeDisplay.classList.add('text-danger');
+                    }
+                });
+
+                form.addEventListener('submit', function(e) {
+                    const cash = parseFloat(cashInput.value) || 0;
+                    if (cash < grandTotal) {
+                        e.preventDefault();
+                        alert('Error: Cash received is less than the total amount.');
+                    }
+                });
+            });
+        </script>
         <?php endif; ?>
         
         <div class="text-center mt-2">

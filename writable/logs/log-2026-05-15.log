@@ -1,0 +1,575 @@
+DEBUG - 2026-05-15 00:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-15 00:40:04 --> ErrorException: Undefined array key "reference_no"
+[Method: GET, Route: sales/history]
+in APPPATH\Views\sales\history_view.php on line 51.
+ 1 APPPATH\Views\sales\history_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reference_no"', 'C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php', 51)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('sales/history_view', [], true)
+ 5 APPPATH\Controllers\Sales.php(25): view('sales/history_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-15 00:40:16 --> ErrorException: Undefined array key "reference_no"
+[Method: GET, Route: sales/history]
+in APPPATH\Views\sales\history_view.php on line 51.
+ 1 APPPATH\Views\sales\history_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reference_no"', 'C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php', 51)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('sales/history_view', [], true)
+ 5 APPPATH\Controllers\Sales.php(25): view('sales/history_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-05-15 00:40:45 --> ErrorException: Undefined array key "reference_no"
+[Method: GET, Route: sales/history]
+in APPPATH\Views\sales\history_view.php on line 51.
+ 1 APPPATH\Views\sales\history_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reference_no"', 'C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php', 51)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\GGGL\\app\\Views\\sales\\history_view.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('sales/history_view', [], true)
+ 5 APPPATH\Controllers\Sales.php(25): view('sales/history_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-15 00:55:13 --> Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+[Method: GET, Route: sales/history]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:13 --> [Caused by] mysqli_sql_exception: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-15 00:55:16 --> Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+[Method: GET, Route: sales/history]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:16 --> [Caused by] mysqli_sql_exception: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-15 00:55:17 --> Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+[Method: GET, Route: sales/history]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:17 --> [Caused by] mysqli_sql_exception: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 00:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 00:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-15 00:55:59 --> Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+[Method: GET, Route: sales/history]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+CRITICAL - 2026-05-15 00:55:59 --> [Caused by] mysqli_sql_exception: Unknown column 'sales_transactions.reference_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `sales_transactions`.`reference_no`, `sales_transactions`.`customer_name`, `sales_transactions`.`transaction_date`, SUM(sales_transactions.total_price) as total_amount, GROUP_CONCAT(CONCAT(rice_inventory.variety, " (", `rice_inventory`.`grade`, ")") SEPARATOR ", ") as items_summary, SUM(sales_transactions.quantity_kg) as total_qty
+FROM `sales_transactions`
+LEFT JOIN `rice_inventory` ON `rice_inventory`.`id` = `sales_transactions`.`variety_id`
+GROUP BY `sales_transactions`.`reference_no`
+ORDER BY `transaction_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\SalesTransactionModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Sales.php(20): App\Models\SalesTransactionModel->getSalesHistory()
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Sales->history()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\GGGL\\public\\index.php')
+DEBUG - 2026-05-15 01:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:00:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-15 01:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

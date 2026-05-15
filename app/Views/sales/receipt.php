@@ -105,6 +105,14 @@
             <td align="left"><strong>TOTAL</strong></td>
             <td align="right"><strong>₱<?= number_format($grand_total, 2) ?></strong></td>
         </tr>
+        <tr>
+            <td align="left">CASH</td>
+            <td align="right">₱<?= number_format($transactions[0]['cash_received'] ?? 0, 2) ?></td>
+        </tr>
+        <tr>
+            <td align="left">CHANGE</td>
+            <td align="right">₱<?= number_format($transactions[0]['change_amount'] ?? 0, 2) ?></td>
+        </tr>
     </table>
 
     <div class="divider"></div>

@@ -13,11 +13,11 @@
                 <thead class="table-dark">
                     <tr>
                         <th class="ps-4">Date & Time</th>
+                        <th>Ref No.</th>
                         <th>Customer Name</th>
-                        <th>Rice Variety</th>
-                        <th>Quantity</th>
+                        <th>Items</th>
+                        <th>Total Qty</th>
                         <th class="text-end">Total Amount</th>
-                        <th class="text-end">Status</th>
                         <th class="text-end pe-4">Action</th>
                     </tr>
                 </thead>
@@ -32,25 +32,25 @@
                             <td class="ps-4 small">
                                 <?= date('M d, Y | h:i A', strtotime($sale['transaction_date'])) ?>
                             </td>
+                            <td><code class="text-primary fw-bold"><?= esc($sale['reference_no']) ?></code></td>
                             <td class="fw-bold"><?= esc($sale['customer_name']) ?></td>
                             <td>
-                                <span class="badge bg-info text-dark">
-                                    <?= esc($sale['variety']) ?> (<?= esc($sale['grade']) ?>)
+                                <span class="badge bg-info text-dark text-wrap text-start" style="max-width: 250px;">
+                                    <?= esc($sale['items_summary']) ?>
                                 </span>
                             </td>
-                            <td><?= number_format($sale['quantity_kg'], 2) ?> kg</td>
+                            <td><?= number_format($sale['total_qty'], 2) ?> kg</td>
                             <td class="text-end fw-bold text-success">
-                                ₱<?= number_format($sale['total_price'], 2) ?>
-                            </td>
-                            <td class="text-end">
-                                <span class="badge bg-success rounded-pill">
-                                    <i class="fas fa-check-circle me-1"></i> Complete
-                                </span>
+                                ₱<?= number_format($sale['total_amount'], 2) ?>
                             </td>
                             <td class="text-end pe-4">
-                                <a href="<?= base_url('sales/receipt/'.$sale['reference_no']) ?>" class="btn btn-sm btn-outline-primary" title="View Receipt">
-                                    <i class="fas fa-file-invoice"></i>
-                                </a>
+                                <?php if (!empty($sale['reference_no'])): ?>
+                                    <a href="<?= base_url('sales/receipt/'.$sale['reference_no']) ?>" class="btn btn-sm btn-outline-primary" title="View Receipt">
+                                        <i class="fas fa-file-invoice"></i> View Receipt
+                                    </a>
+                                <?php else: ?>
+                                    <span class="text-muted small">No Receipt</span>
+                                <?php endif; ?>
                             </td>
                         </tr>
                         <?php endforeach; ?>

@@ -305,6 +305,7 @@ class AdminController extends Controller
         $inventoryModel = new RiceInventoryModel();
 
         $cart = session()->get('cart') ?? [];
+        $cash_received = $this->request->getPost('cash_received') ?: 0;
 
         if (empty($cart)) {
             // Fallback for single sale if form submitted directly without cart (optional)
@@ -322,11 +323,15 @@ class AdminController extends Controller
 
                 $reference_no = 'TRX-' . strtoupper(bin2hex(random_bytes(4)));
                 $total_price = $rice['price'] * $qty_sold;
+                $change_amount = $cash_received - $total_price;
+
                 $salesModel->save([
                     'reference_no'  => $reference_no,
                     'variety_id'    => $variety_id,
                     'quantity_kg'   => $qty_sold,
                     'total_price'   => $total_price,
+                    'cash_received' => $cash_received,
+                    'change_amount' => $change_amount,
                     'customer_name' => $customer_name,
                     'transaction_date' => date('Y-m-d H:i:s')
                 ]);
@@ -339,6 +344,18 @@ class AdminController extends Controller
             }
             return redirect()->back()->with('error', 'Your cart is empty.');
         }
+
+        // Calculate Grand Total from cart
+        $grand_total = 0;
+        foreach ($cart as $item) {
+            $grand_total += $item['total_price'];
+        }
+
+        if ($cash_received < $grand_total) {
+            return redirect()->back()->with('error', 'Insufficient cash received.');
+        }
+
+        $change_amount = $cash_received - $grand_total;
 
         // Process each item in cart
         $db = \Config\Database::connect();
@@ -360,6 +377,8 @@ class AdminController extends Controller
                 'variety_id'    => $item['variety_id'],
                 'quantity_kg'   => $item['quantity_kg'],
                 'total_price'   => $item['total_price'],
+                'cash_received' => $cash_received, // Store full cash in each row for reference
+                'change_amount' => $change_amount, // Store full change in each row for reference
                 'customer_name' => $item['customer_name'],
                 'transaction_date' => date('Y-m-d H:i:s')
             ]);
